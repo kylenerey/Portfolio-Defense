@@ -4,10 +4,11 @@ body {
   padding-bottom: 1000px;
   background-color: #29292b;
   color: white;
+  width: auto;
 }
 #index-header {
   width: 100%;
-  height: 100vh;
+  height: 55rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,16 +32,17 @@ p {
   font-weight: 600;
 }
 #navbar {
-  width: 50%;
   padding: 25%;
   padding-right: 25%;
   padding-top:0;
   padding-bottom: 0;
   margin: 0;
-  height: 60px;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
   align-items: center; 
+  flex-direction: row;
+  gap: 3em;
 }
 #nav-link {
   margin: 0;
@@ -73,7 +75,6 @@ p {
   grid-template-columns: 40% 60%;
 }
 #section {
-  width: 100%;
   height: 400px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -85,9 +86,8 @@ p {
   align-items: center;
   justify-content: center;
 }
-#sec_p p{
+.essay{
   font-size: 16px;
-  width: 1000px;
 }
 #section1 {
   width: 100%;
@@ -101,6 +101,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 0;
   padding-left: 20px;
 }
@@ -301,4 +302,295 @@ button:hover {
   font-size: 50px;
   font-weight: bold;
   color: rgb(199, 189, 189);
+}
+@media screen and (max-width: 425px) {
+  #div-introduction p {
+    font-size: 18px;
+  }
+  #navbar {
+    height: 2em;
+    font-size: 10px;
+  }
+  #section, #section1, #section2 {
+    display: flex;
+    flex-direction: column; 
+    height: 40rem;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  .span_p {
+    font-size: 50px;
+    margin-bottom: 0.5rem;
+  }
+  #sec_p {
+    margin-top: 50px;
+    display: flex;
+  }
+  .essay {
+    font-size: 14px;
+    width: 90%;
+  }
+  #section1 .span_p {
+    font-size: 40px;
+  }
+  #section1 .essay {
+    margin-bottom: 50px;
+  }
+  #infos_p {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+  }
+  .div_columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons img {
+    width: 10rem;
+    height: 10rem;
+  }
+  #footer {
+    height: 2rem;
+  }
+  #footer p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #index-header {
+    height: 70rem;
+  }
+  #div-introduction p {
+    font-size: 40px;
+  }
+  #navbar {
+    height: 4em;
+    font-size: 18px;
+    gap: 5rem;
+  }
+  #section {
+    margin-top: 5rem;
+  }
+  #section, #section1, #section2 {
+    display: flex;
+    flex-direction: column; 
+    height: 50rem;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .span_p {
+    font-size: 60px;
+    margin-bottom: 0.5rem;
+  }
+  #sec_p {
+    margin-top: 50px;
+    display: flex;
+  }
+  .essay {
+    font-size: 17px;
+    width: 90%;
+  }
+  #section1 .span_p {
+    font-size: 60px;
+  }
+  #section1 .essay {
+    margin-bottom: 50px;
+  }
+  #infos_p {
+    font-size: 50px;
+    margin-bottom: 2rem;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+  }
+  .div_columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .icons_p {
+    font-size: 20px;
+  }
+  #footer {
+    height: 5rem;
+  }
+  #footer p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  #index-header {
+    height: 60rem;
+  }
+  #div-introduction p {
+    font-size: 40px;
+  }
+  #navbar {
+    height: 3em;
+    font-size: 20px;
+    gap: 10rem;
+  }
+  #section {
+    margin-top: 3rem;
+  }
+  #section, #section1, #section2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    height: 50rem;
+  }
+  #section1 {
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .span_p {
+    font-size: 100px;
+    margin-bottom: 0.5rem;
+  }
+  #sec_p {
+    margin-top: 50px;
+    display: flex;
+  }
+  .essay {
+    font-size: 30px;
+    width: 90%;
+  }
+  #section1 .span_p {
+    font-size: 90px;
+  }
+  #section1 .essay {
+    margin-bottom: 50px;
+  }
+  #infos_p {
+    font-size: 70px;
+    margin-bottom: 2rem;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+  }
+  .div_columns {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 50rem;
+  }
+  .icons img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .icons_p {
+    font-size: 30px;
+    margin-left: 1em;
+  }
+  #footer {
+    height: 8rem;
+  }
+  #footer p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px){
+  #index-header {
+    height: 65rem;
+  }
+  #div-introduction p {
+    font-size: 60px;
+  }
+  #navbar {
+    height: 4em;
+    font-size: 28px;
+    gap: 12rem;
+  }
+  #section {
+    margin-top: 10rem;
+  }
+  #section, #section1, #section2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    height: 60rem;
+  }
+  #section1 {
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  img {
+    width: 600px;
+    height: 600px;
+  }
+  .span_p {
+    font-size: 100px;
+    margin-bottom: 0.5rem;
+  }
+  #sec_p {
+    margin-top: 50px;
+    display: flex;
+  }
+  .essay {
+    font-size: 30px;
+    width: 90%;
+  }
+  #section1 .span_p {
+    font-size: 90px;
+  }
+  #section1 .essay {
+    margin-bottom: 50px;
+  }
+  #infos_p {
+    font-size: 90px;
+    margin-bottom: 2rem;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+  }
+  .div_columns {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+  }
+  .icons img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .icons_p {
+    font-size: 25px;
+    margin-left: 1em;
+  }
+  #footer {
+    height: 8rem;
+  }
+  #footer p {
+    font-size: 30px;
+  }
 }
